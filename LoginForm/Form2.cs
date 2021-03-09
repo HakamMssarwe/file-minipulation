@@ -165,8 +165,8 @@ namespace LoginForm
 
                             line = line.Replace($", {newTaskInput.Text}", ""); 
 
-                            if (tempLineLength == line.Length) //if no replace happened that means the task was the first, therfore we use : before it and not ,
-                                line = line.Replace($"{newTaskInput.Text}", "");
+                            if (tempLineLength == line.Length) //if no replace happened that means the task was the first
+                                line = line.Replace($"{newTaskInput.Text}", "").Replace(":, ","");
                             
                         }
 
@@ -187,7 +187,7 @@ namespace LoginForm
             else if (newTaskInput.Text != "")
             {
                 tasks.Remove(newTaskInput.Text);
-                newTaskLabel.Text = tasks.Count.ToString();
+                newTaskLabel.Text = $"Tasks({tasks.Count.ToString()})";
             }
 
 
