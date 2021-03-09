@@ -45,7 +45,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(329, 20);
             this.txtEmail.TabIndex = 0;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPassword
             // 
@@ -53,7 +52,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(329, 20);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // signInBtn
             // 
@@ -76,7 +74,6 @@
             this.lblMessage.Size = new System.Drawing.Size(329, 20);
             this.lblMessage.TabIndex = 3;
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblMessage.Click += new System.EventHandler(this.lblMessage_Click);
             // 
             // pictureBox1
             // 
@@ -95,7 +92,6 @@
             this.label1.Size = new System.Drawing.Size(40, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "Email";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -106,7 +102,6 @@
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // LoginForm
             // 
