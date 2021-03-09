@@ -41,7 +41,7 @@ namespace LoginForm
         private void addTaskBtn_Click(object sender, EventArgs e)
         {
            
-            //basically if the project exists and not new
+            //this basically checks if the project exists and is not a new project
             if (newTaskInput.Text != "" && File.ReadAllText(path).IndexOf(projectNameInput.Text) != -1)
             {
                 string line;
@@ -165,7 +165,7 @@ namespace LoginForm
 
                             line = line.Replace($", {newTaskInput.Text}", ""); 
 
-                            if (tempLineLength == line.Length) //if no replace happened that means the task was the first
+                            if (tempLineLength == line.Length) //if no replace happened that means the task is the first in the list
                                 line = line.Replace($"{newTaskInput.Text}", "").Replace(":, ","");
                             
                         }
